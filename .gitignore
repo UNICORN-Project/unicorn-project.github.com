@@ -1,0 +1,7 @@
+fuel/app/logs/*/*/*
+fuel/app/cache/*/*
+/.settings
+/.buildpath
+/.project
+/tmps
+.DS_Store
