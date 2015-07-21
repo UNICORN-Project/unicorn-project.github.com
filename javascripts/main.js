@@ -6,8 +6,8 @@ $(document).ready(function(){
         url: target[0].attributes["src"].value,
     }).success(function(data){
         target.append(marked(data)).ready(function(){
-            $("h1#unicorn").remove();
-            $("p").each(function(){
+            $("dim#markdown_content h1#unicorn").remove();
+            $("dim#markdown_content p").each(function(){
                 var text = $(this).text();
                 var subhead = false;
                 var subsubhead = false;
