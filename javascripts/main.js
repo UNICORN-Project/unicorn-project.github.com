@@ -5,7 +5,13 @@ $(document).ready(function(){
     $.ajax({
         url: target[0].attributes["src"].value,
     }).success(function(data){
-        target.append(marked(data));
+        target.append(marked(data)).ready(function(){
+            $("h1#unicorn").remove();
+            $("p").each(function(){
+                var text = $(this).text();
+                $(this).text(text.replace(/^#+/,""));
+            });
+        });
     }).error(function(data){
         target.append("This content failed to load.");
     });
