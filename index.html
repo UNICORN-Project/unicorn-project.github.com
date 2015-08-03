@@ -11,7 +11,22 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
     <script type="text/javascript" src="javascripts/marked.js"></script>
     <script type="text/javascript" src="javascripts/main.js"></script>
-
+    <script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId   : '581900438618437',
+            xfbml   : true,
+            version : 'v2.4'
+        });
+    };
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
     <title>UNICORN</title>
   </head>
 
@@ -36,6 +51,12 @@
 	<div id="main_content_wrap" class="outer">
 		<section id="main_content" class="inner">
 			<!-- Content -->
+			<h2>QUICK START The UNICORN<br/><span style="font-size: medium;">10分でサーバーサイド連携したiOSアプリの開発を開始するまでのDEMO</span></h2>
+			<div>
+				<iframe width="640" height="480" src="https://www.youtube.com/embed/20jphnY7S6c?cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div>
+			<div style="height:50px;"><!-- 空行 --></div>
 			<h2>UNICORNについて</h2>
 			<div id="markdown_content" src="https://raw.githubusercontent.com/UNICORN-Project/UNICORN/master/README.md"> </div>
 			<div style="height:50px;"><!-- 空行 --></div>
