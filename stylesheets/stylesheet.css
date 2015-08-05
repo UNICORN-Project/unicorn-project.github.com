@@ -185,6 +185,7 @@ code {
 pre code {
   display: block;
   box-shadow: none;
+  word-break: normal !important;
 }
 
 blockquote {
