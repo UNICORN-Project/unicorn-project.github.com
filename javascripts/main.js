@@ -28,12 +28,12 @@ $(document).ready(function(){
                 if (subsubhead){
                     text = "<h4>" + text + "</h4>"
                 }
-                if (subhead || subsubhead || link){
+                //if (subhead || subsubhead || link){
                 	$(this).html(text);
-                }
-                else {
-                	$(this).text(text);
-                }
+                //}
+                //else {
+                //	$(this).text(text);
+                //}
             });
         });
     }).error(function(data){
