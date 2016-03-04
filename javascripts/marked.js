@@ -903,7 +903,6 @@ Renderer.prototype.text = function(text) {
 /**
  * Parsing & Compiling
  */
-
 function Parser(options) {
   this.tokens = [];
   this.token = null;
@@ -916,7 +915,6 @@ function Parser(options) {
 /**
  * Static Parse Method
  */
-
 Parser.parse = function(src, options, renderer) {
   var parser = new Parser(options, renderer);
   return parser.parse(src);
@@ -925,7 +923,6 @@ Parser.parse = function(src, options, renderer) {
 /**
  * Parse Loop
  */
-
 Parser.prototype.parse = function(src) {
   this.inline = new InlineLexer(src.links, this.options, this.renderer);
   this.tokens = src.reverse();
