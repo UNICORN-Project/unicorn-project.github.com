@@ -7,7 +7,7 @@ $(document).ready(function(){
         target.append(marked(data)).ready(function(){
             $("div#markdown_content h1#unicorn").remove();
             $("div#markdown_content p").each(function(){
-                var text = $(this).text();
+                var text = $(this).html();
                 var subhead = false;
                 var subsubhead = false;
                 var link = false;
@@ -18,10 +18,10 @@ $(document).ready(function(){
                     subsubhead = true;
                 }
                 text = text.replace(/^#+/,"");
-                if (-1 < text.indexOf("http://") || -1 < text.indexOf("https://")){
-                    link = true;
-                    text = "<a href='" + text + "' target='_blank'>" + text + "</a>";
-                }
+//                if (-1 < text.indexOf("http://") || -1 < text.indexOf("https://")){
+//                    link = true;
+//                    text = "<a href='" + text + "' target='_blank'>" + text + "</a>";
+//                }
                 if (subhead){
                     text = "<h3>" + text + "</h3>"
                 }
