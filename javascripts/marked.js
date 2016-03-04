@@ -897,7 +897,7 @@ Renderer.prototype.image = function(href, title, text) {
 };
 
 Renderer.prototype.text = function(text) {
-  return text;
+  return text + '<br/>';
 };
 
 /**
