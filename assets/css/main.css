@@ -1,0 +1,92 @@
+/* Over ride */
+h2 {
+  background: none !important;
+}
+hr {
+  background: url('../images/bg_hr.png') repeat-x center !important;
+}
+#forkme_banner {
+  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50% !important;
+}
+#downloads {
+  background: url('../images/icon_download.png') no-repeat 0% 90% !important;
+}
+.zip_download_link {
+  background: url(../images/sprite_download.png) no-repeat bottom left !important;
+}
+.tar_download_link {
+  background: url(../images/sprite_download.png) no-repeat bottom right !important;
+}
+.zip_download_link:hover {
+  background: url(../images/sprite_download.png) no-repeat top left !important;
+}
+.tar_download_link:hover {
+  background: url(../images/sprite_download.png) no-repeat top right !important;
+}
+.header-image {
+	background: url(../images/header-background.png) no-repeat center center scroll !important;
+}
+.headline h1 {
+	color: white;
+	font-size: 500%;
+	background: none !important;
+}
+.headline h2 {
+	color: white;
+	font-size: 300%;
+}
+.navbar {
+	padding-top: 40px;
+}
+.navbar-brand {
+	color: white !important;
+	font-size: 30px;
+	font-weight: bold;
+}
+#forkme_banner {
+	right: 110px;
+}
+#zip_download_link {
+	display: block;
+	position: absolute;
+	top:-25px;
+	right: 10px;
+	z-index: 10;
+}
+.featurette {
+	margin-bottom: 40px;
+}
+.featurette-heading .text-muted {
+	font-size: 40px;
+}
+#contact h2 {
+	margin: 0;
+	padding: 0;
+	background: none !important;
+}
+#about .featurette-divider:first-of-type {
+	background: none !important;
+	border: none;
+}
+.page-header{
+	margin-top: 80px;
+}
+html {
+	height: 100%;
+}
+body {
+	height: calc(100% - 54px);
+}
+.documents-container {
+	min-height: calc(100% - 54px);
+}
+#documents {
+	margin-bottom: 40px;
+}
+#footer_wrap .inner {
+	max-width: 100%;
+	padding: 10px;
+}
+#footer_wrap .inner p {
+	margin-bottom: 0;
+}

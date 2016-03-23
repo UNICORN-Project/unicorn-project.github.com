@@ -1,81 +1,80 @@
-<!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset='utf-8' />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="UNICORN : " />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-    <script type="text/javascript" src="javascripts/marked.js"></script>
-    <script type="text/javascript" src="javascripts/raphael-min.js"></script>
-    <script type="text/javascript" src="javascripts/flowchart-latest.js"></script>
-    <script type="text/javascript" src="javascripts/main.js"></script>
-    <title>UNICORN</title>
-  </head>
-
-  <body>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.4&appId=581900438618437";
-        fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="//github.com/UNICORN-Project/UNICORN">View on GitHub</a>
-
-          <h1 id="project_title">UNICORN</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="//github.com/UNICORN-Project/UNICORN/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="//github.com/UNICORN-Project/UNICORN/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-	<!-- MAIN CONTENT -->
-	<div id="main_content_wrap" class="outer">
-		<section id="main_content" class="inner">
-			<!-- Content -->
-			<h2>QUICK START The UNICORN<br/><span style="font-weight:normal; font-size: medium;">10分でサーバーサイド連携したiOSアプリの開発を開始するまでのDEMO</span></h2>
-			<div class="youtube-wrapper">
-				<iframe width="420" height="315" src="https://www.youtube.com/embed/20jphnY7S6c?cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+---
+layout: default
+group: index
+---
+		<section id="about">
+			<p>&nbsp;</p>
+			<hr class="featurette-divider">
+			<!-- First Featurette -->
+			<div class="featurette">
+				<img class="featurette-image img-circle img-responsive pull-right" src="/assets/images/feature1.png">
+				<h2 class="featurette-heading">素早く開発を始められる。
+					<span class="text-muted">それは一つでも多くの機能の実装に繋がる、一人でも多くの顧客に歓んで貰う為の機能に繋がる。</span>
+				</h2>
+				<p class="lead">
+					{{ site.title }}フレームワークは、開発を素早く始める為に
+					<br/>
+					「<b>認証機能</b>」・「<b>AUTO REST機能</b>」や
+					<br/>
+					Webサイトなら「<b>FlowXML</b>」や「<b>Bootstrap</b>」・「<b>Template Engine</b>」を
+					<br/>
+					スマホネイティブアプリなら「<b>クライアントサイドモデル オートマイグレーション</b>」
+					<br/>
+					と言った様々な自動機能を搭載しています。
+					<br/>
+					<br/>
+					もちろん、「ORMapper」や「Table・DB Auto Migration」も搭載しています。
+				</p>
 			</div>
-			<div style="height:50px;"><!-- 空行 --></div>
-			<h2>UNICORNについて</h2>
-			<div id="markdown_content" src="https://raw.githubusercontent.com/UNICORN-Project/UNICORN/master/README.md"> </div>
-			<div style="height:50px;"><!-- 空行 --></div>
-			<h2>How to use ...</h2>
-			<h3>■How to use auto migration<br/><span style="font-weight:normal; font-size: medium;">UNICORNでのオートマイグレーションの基本</span></h3>
-			<div class="youtube-wrapper">
-				<iframe width="420" height="315" src="https://www.youtube.com/embed/TjdcYIKXsjw?cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+			<hr class="featurette-divider">
+			<!-- Second Featurette -->
+			<div class="featurette">
+				<img class="featurette-image img-circle img-responsive pull-left" src="/assets/images/feature2.png">
+				<h2 class="featurette-heading">ネイティブアプリ開発を加速させる。
+					<span class="text-muted">Objective-Cサンプルコードや、ライブラリが同梱されいてアプリ開発に直ぐに集中出来る。</span>
+				</h2>
+				<p class="lead">
+					iOSなら「<b>クライアントサイドモデル オートマイグレーション</b>」と同時に{{ site.title }}フレームワークと通信する基盤が既にサンプルとして同梱されています。
+					<br/>
+					その他、「<b>In App Purchase</b>」や通信によるデータベースへの参照・更新と言った当たり前の機能がフレームワーク化されています。
+					<br/>
+					<br/>
+					<small>※Android版は現在開発中です。</small>
+				</p>
 			</div>
-			<div style="height:50px;"><!-- 空行 --></div>
-			<div class="tweet" style="float: left; width: 100px;">
-				<a href="https://twitter.com/share" class="twitter-share-button" data-via="saimushi">Tweet</a>
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			<hr class="featurette-divider">
+			<!-- Third Featurette -->
+			<div class="featurette">
+				<img class="featurette-image img-circle img-responsive pull-right" src="/assets/images/feature3.png">
+				<h2 class="featurette-heading">'Fast Start'を追求する。それは、コストダウンに繋がる。
+					<span class="text-muted">様々な自動機能がコストの集中を可能にさせる。それは期間・人と言ったコストをダウンさせる。</span>
+				</h2>
+				<p class="lead">
+					素早く開発を始められ、さらに開発部分を減らせればコストダウンにきっと繋がります。
+					<br/>
+					また、{{ site.title }}フレームワークは最終的には開発者の負担を減らす為にあらゆる事を自動化し
+					<br/>
+					<b>開発者の関心や知識領域を局所化することで'Fast Start'する</b>
+					<br/>
+					事を目指しています。
+					<br/>
+					<br/>
+					そして、{{ site.title }}フレームワークはオープンソースです。
+					<br/>
+					MITライセンスなので、自由に利用する事が出来ます。
+				</p>
 			</div>
-			<div class="fb-like" data-width="300"></div>
-			<div style="height:10px; clear: both;"><!-- 空行 --></div>
+			<hr class="featurette-divider">
 		</section>
-	</div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">UNICORN maintained by <a href="http://saimushi.github.io">saimushi</a> <a href="./licenses.html">and MIT License</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
-</html>
+		<section id="readme">
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<!-- Readme Featurette -->
+			<div id="markdown_content" src="https://raw.githubusercontent.com/{{ site.title }}-Project/{{ site.title }}/master/README.md" class="featurette">
+				<h2 class="featurette-heading">Readme
+					<span class="text-muted">more information.</span>
+				</h2>
+				<h3>{{ site.title }}フレームワークの目的・目標</h3>
+			</div>
+		</section>
