@@ -1,9 +1,36 @@
 ##UNICORNのconfigの設定・変更
 
 UNICORNのconfigはXMLで定義されています。
+```
+/[Your Directory Path]/lib/FrameworkPackage/coe/config.xml
+```
+
+configの変更はxmlを編集する事で可能です。
+
+ソース上からconfigの値を取得するには
 
 ```
-/[Your Project Path]/lib/FrameworkPackage/coe/config.xml
+$basePath = Configure::BASE_PATH;
+```
+等として、取得出来ます。
+
+
+また、Project毎のconfigも用意されています。
+```
+/[Your Directory Path]/lib/[Your Project Name]Package/coe/[Your Project Name]Config.xml
 ```
 
-また、
+Project毎のconfigの値の取得は
+```
+$basePath = TestProjectConfigure::BASE_PATH;
+```
+として、取得出来ます。
+
+また、フレームワークのconfigか、或いはProject毎のconfigから値を取得したい場合は
+```
+$basePath = getConfig('BASE_PATH');
+```
+と、する事で、Project毎のconfig → フレームワークのconfigの順で捜査した結果を取得出来ます。
+
+**値が存在しない場合はnullが返ります。**
+
