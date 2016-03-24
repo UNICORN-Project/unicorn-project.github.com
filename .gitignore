@@ -5,3 +5,4 @@ fuel/app/cache/*/*
 /.project
 /tmps
 .DS_Store
+_site/
