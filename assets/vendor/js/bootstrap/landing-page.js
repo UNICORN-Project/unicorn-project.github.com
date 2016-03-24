@@ -7,7 +7,7 @@ $(function() {
         }
         if (0 < $($anchor).size()){
         	$('html, body').stop().animate({
-        		scrollTop: $($anchor).offset().top -20
+        		scrollTop: $($anchor).offset().top -40
         	}, 1000, 'easeInOutExpo');
         	event.preventDefault();
         }
