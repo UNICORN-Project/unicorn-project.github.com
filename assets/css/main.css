@@ -80,7 +80,7 @@ body {
 .documents-container {
 	min-height: calc(100% - 54px);
 }
-.container {
+.container:not(first-child) {
 	margin-top: 50px;
 }
 #documents {
