@@ -3,8 +3,9 @@ layout: page
 title : Documents
 header : Post Archive
 group: documents
+number: 0
 ---
 {% include JB/setup %}
 
-{% assign posts_collate = site.posts %}
+{% assign posts_collate = site.posts | sort: 'number' %}
 {% include JB/posts_collate %}
