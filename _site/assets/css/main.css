@@ -90,3 +90,8 @@ body {
 #footer_wrap .inner p {
 	margin-bottom: 0;
 }
+@media(max-width:768px) {
+	.featurette-heading .text-muted {
+		font-size: 20px;
+	}
+}
