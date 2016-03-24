@@ -80,6 +80,9 @@ body {
 .documents-container {
 	min-height: calc(100% - 54px);
 }
+.container {
+	margin-top: 50px;
+}
 #documents {
 	margin-bottom: 40px;
 }
