@@ -2,7 +2,7 @@
 layout: post
 title: "各種環境設定フラグファイル"
 group: documents
-number: 11
+number: 2
 ---
 {% include JB/setup %}
 
