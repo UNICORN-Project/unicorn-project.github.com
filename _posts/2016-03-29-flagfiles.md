@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "各種環境設定フラグファイル"
 group: documents
 number: 2
