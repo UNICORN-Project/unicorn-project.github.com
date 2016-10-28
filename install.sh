@@ -20,7 +20,7 @@ if [ -e ./README.md ]; then
   cp -f ./README.md ./__tmp/README.md
 fi
 
-curl -sSL https://github.com/UNICORN-Project/UNICORN/archive/0.2.0.zip > ./UNICORN.zip && \
+curl -sSL https://github.com/UNICORN-Project/UNICORN/archive/0.3.0.zip > ./UNICORN.zip && \
 unzip -o ./UNICORN.zip
 rm ./UNICORN.zip
 cp -rf ./UNICORN-0.2.0/* ./
