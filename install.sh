@@ -5,7 +5,7 @@ mkdir -p ./__tmp
 if [ -e ./lib/FrameworkPackage/core/config.xml ]; then
   cp -f ./lib/FrameworkPackage/core/config.xml ./__tmp/config.xml.bak
 fi
-if [ -e ./lib/FrameworkPackage/core/config.xml ]; then
+if [ -e ./lib/FrameworkPackage/core/package.xml ]; then
   cp -f ./lib/FrameworkPackage/core/package.xml ./__tmp/package.xml.bak
 fi
 if [ -e ./lib/FrameworkPackage/core/FrameworkManager.config.xml ]; then
@@ -26,7 +26,7 @@ rm -rf ./UNICORN-0.2.0
 curl -sSL https://github.com/UNICORN-Project/lib/archive/0.2.0.zip > ./lib.zip && \
 unzip -o ./lib.zip
 rm ./lib.zip
-mv -Rf ./lib-0.2.0 ./lib
+mv -Rf ./lib-0.2.0/* ./lib/
 rm -rf ./lib-0.2.0
 rm -rf ./lib/.gitignore
 mkdir -p ./vendor/UNICORN
