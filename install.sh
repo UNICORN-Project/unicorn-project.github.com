@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # configのバックアップ
+mkdir -p ./_tmp
 mkdir -p ./__tmp
+cp -rf ./_tmp/* ./__tmp/
 if [ -e ./lib/FrameworkPackage/core/config.xml ]; then
   cp -f ./lib/FrameworkPackage/core/config.xml ./__tmp/config.xml.bak
 fi
@@ -21,13 +23,13 @@ fi
 curl -sSL https://github.com/UNICORN-Project/UNICORN/archive/0.2.0.zip > ./UNICORN.zip && \
 unzip -o ./UNICORN.zip
 rm ./UNICORN.zip
-mv -f ./UNICORN-0.2.0/* ./
+cp -rf ./UNICORN-0.2.0/* ./
 rm -rf ./UNICORN-0.2.0
 curl -sSL https://github.com/UNICORN-Project/lib/archive/0.2.0.zip > ./lib.zip && \
 unzip -o ./lib.zip
 rm ./lib.zip
 mkdir ./lib
-mv -Rf ./lib-0.2.0/* ./lib/
+cp -rf ./lib-0.2.0/* ./lib/
 rm -rf ./lib-0.2.0
 rm -rf ./lib/.gitignore
 mkdir -p ./vendor/UNICORN
@@ -52,7 +54,8 @@ fi
 if [ -e ./__tmp/README.md ]; then
   mv -f ./__tmp/README.md ./__tmp/README.md
 fi
-mv -Rf ./__tmp ./_tmp
+cp -rf ./__tmp/* ./_tmp/
+rm -rf ./__tmp
 
 # UNICORNのインストーラを実行
 php ./lib/UNICORN
