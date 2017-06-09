@@ -20,18 +20,18 @@ if [ -e ./README.md ]; then
   cp -f ./README.md ./__tmp/README.md
 fi
 
-curl -sSL https://github.com/UNICORN-Project/UNICORN/archive/0.4.1.zip > ./UNICORN.zip && \
+curl -sSL https://github.com/UNICORN-Project/UNICORN/archive/0.4.2.zip > ./UNICORN.zip && \
 unzip -o ./UNICORN.zip
 rm ./UNICORN.zip
-cp -rf ./UNICORN-0.4.1/* ./
-cp -rf ./UNICORN-0.4.1/.gitignore ./
-rm -rf ./UNICORN-0.4.1
-curl -sSL https://github.com/UNICORN-Project/lib/archive/0.4.1.zip > ./lib.zip && \
+cp -rf ./UNICORN-0.4.2/* ./
+cp -rf ./UNICORN-0.4.2/.gitignore ./
+rm -rf ./UNICORN-0.4.2
+curl -sSL https://github.com/UNICORN-Project/lib/archive/0.4.2.zip > ./lib.zip && \
 unzip -o ./lib.zip
 rm ./lib.zip
 mkdir ./lib
-cp -rf ./lib-0.4.1/* ./lib/
-rm -rf ./lib-0.4.1
+cp -rf ./lib-0.4.2/* ./lib/
+rm -rf ./lib-0.4.2
 rm -rf ./lib/.gitignore
 mkdir -p ./vendor/UNICORN
 cp ./README.md ./vendor/UNICORN/
