@@ -26,12 +26,12 @@ rm ./UNICORN.zip
 cp -rf ./UNICORN-0.4.3/* ./
 cp -rf ./UNICORN-0.4.3/.gitignore ./
 rm -rf ./UNICORN-0.4.3
-curl -sSL https://github.com/UNICORN-Project/lib/archive/0.4.2.zip > ./lib.zip && \
+curl -sSL https://github.com/UNICORN-Project/lib/archive/0.4.3.zip > ./lib.zip && \
 unzip -o ./lib.zip
 rm ./lib.zip
 mkdir ./lib
-cp -rf ./lib-0.4.2/* ./lib/
-rm -rf ./lib-0.4.2
+cp -rf ./lib-0.4.3/* ./lib/
+rm -rf ./lib-0.4.3
 rm -rf ./lib/.gitignore
 mkdir -p ./vendor/UNICORN
 cp ./README.md ./vendor/UNICORN/
