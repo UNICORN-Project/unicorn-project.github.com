@@ -2,7 +2,7 @@
 layout: page
 title: UNICORN独自テンプレートエンジン
 group: documents
-number: 21
+number: 12
 ---
 {% include JB/setup %}
 
