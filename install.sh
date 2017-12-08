@@ -20,16 +20,16 @@ if [ -e ./README.md ]; then
   cp -f ./README.md ./__tmp/README.md
 fi
 
-wget https://github.com/UNICORN-Project/UNICORN/archive/0.4.4.zip -O UNICORN.zip && unzip -o ./UNICORN.zip
+wget https://github.com/UNICORN-Project/UNICORN/archive/0.4.5.zip -O UNICORN.zip && unzip -o ./UNICORN.zip
 rm ./UNICORN.zip
-cp -rf ./UNICORN-0.4.4/* ./
-cp -rf ./UNICORN-0.4.4/.gitignore ./
-rm -rf ./UNICORN-0.4.4
-wget https://github.com/UNICORN-Project/lib/archive/0.4.3.zip -O lib.zip && unzip -o ./lib.zip
+cp -rf ./UNICORN-0.4.5/* ./
+cp -rf ./UNICORN-0.4.5/.gitignore ./
+rm -rf ./UNICORN-0.4.5
+wget https://github.com/UNICORN-Project/lib/archive/0.4.5.zip -O lib.zip && unzip -o ./lib.zip
 rm ./lib.zip
 mkdir ./lib
-cp -rf ./lib-0.4.3/* ./lib/
-rm -rf ./lib-0.4.3
+cp -rf ./lib-0.4.5/* ./lib/
+rm -rf ./lib-0.4.5
 rm -rf ./lib/.gitignore
 mkdir -p ./vendor/UNICORN
 cp ./README.md ./vendor/UNICORN/
