@@ -25,11 +25,13 @@ rm ./UNICORN.zip
 cp -rf ./UNICORN-0.4.5/* ./
 cp -rf ./UNICORN-0.4.5/.gitignore ./
 rm -rf ./UNICORN-0.4.5
-wget https://github.com/UNICORN-Project/lib/archive/0.4.5.zip -O lib.zip && unzip -o ./lib.zip
-rm ./lib.zip
-mkdir ./lib
-cp -rf ./lib-0.4.5/* ./lib/
-rm -rf ./lib-0.4.5
+git clone -b 0.4.5 https://github.com/UNICORN-Project/lib.git
+#wget https://github.com/UNICORN-Project/lib/archive/0.4.5.zip -O lib.zip && unzip -o ./lib.zip
+#rm ./lib.zip
+#mkdir ./lib
+#cp -rf ./lib-0.4.5/* ./lib/
+#mv ./lib-0.4.5 ./_tmp
+rm -rf ./lib/.git
 rm -rf ./lib/.gitignore
 mkdir -p ./vendor/UNICORN
 cp ./README.md ./vendor/UNICORN/
